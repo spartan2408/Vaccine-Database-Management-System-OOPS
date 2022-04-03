@@ -1,0 +1,5 @@
+16:34:54 **** Incremental Build of configuration Debug for project mini_project ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mini_project.o" "..\\src\\mini_project.cpp" 
+g++ -o mini_project.exe "src\\classes.o" "src\\mini_project.o" 
+Info: Nothing to build for mini_project

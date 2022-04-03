@@ -1,0 +1,75 @@
+/*
+ * classes.cpp
+ *
+ *  Created on: 06-Dec-2021
+ *      Author: ADITYA N SHARMA
+ */
+
+#include <iostream>
+using namespace std;
+
+#include<iostream>
+#include<istream>
+#include<fstream>
+#include<string>
+#include<ctime>
+#include<stdlib.h>
+#include<conio.h>
+#include"HEADER.h"
+
+class variable{
+	public:
+
+    int task, taskforcb,n,Age,day,month,year,curda,curmo,curye;
+    unsigned long long mobile,mobile1,password,password1,back,date,birthdate,menu,y;
+    long long int aadhar;
+    char Name[50];
+    char Surname[50];
+
+};
+class Covid:public variable
+{
+     public:
+         void menu()
+         {
+
+    	cout<<"\t\t\t\tWELCOME TO THE MAIN PAGE. ";
+
+    	cout<<"\n1. REGISTRATION.\n";
+    	cout<<"2. LOGIN.\n";
+
+    	cout<<"\nCHOOSE THE TASK:-\n ";
+    	cin>>n;
+
+    	switch(n)
+		{
+    	case 1:
+    	registration();
+    	break;
+
+    	case 2:
+    	login();
+    	break;
+        }
+	}
+	void display(){
+
+	cout<<"1. Booking "<<endl;
+	cout<<"2. Certificate "<<endl;
+
+	cout<<"choose your task"<<endl;
+	cin>>taskforcb;
+
+	switch(taskforcb){
+		case 1:
+		booking();
+		break;
+
+		case 2:
+		system("cls");
+		certificate();
+
+		system("Color F");
+		break;
+	}
+}
